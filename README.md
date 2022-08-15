@@ -1,9 +1,9 @@
 # Gaussian mixture model for collaborative filtering  
 
 ## Introduction  
-This is a project of my **Machine learning with Python** course. The task is to build a mixture model for collaborative filtering.
+This is a project of my **MITx Machine learning with Python** course. The task is to build a mixture model for collaborative filtering.
 
-In this project, a small portion of the Netflix database was used. The dataset is a partialy observed rating matrix, of which the rows represent the users and columns represent movies. One user only rates some movies and many others have not been rated by this user. The problem to be solved here is to predict the rating of those unwatched movies. Gaussian mixture model is used to solve this problem.
+In this project, a small portion of the Netflix database was used. The dataset is a partialy observed rating matrix, of which the rows represent the users and columns represent movies. One user only rates some movies and many others have not been rated by this user. The problem to be solved here is to predict the rating of those unwatched movies. Gaussian mixture model is used to solve this problem in this project.
 
 ## What I did in this project  
 - Implemented naive EM algorithm for data classification. 
