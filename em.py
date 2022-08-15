@@ -30,10 +30,6 @@ def estep(X: np.ndarray, mixture: GaussianMixture) -> Tuple[np.ndarray, float]:
         # log_pdf = np.log(pdf + 1e-16)
         log_pdf = np.log(1/np.sqrt(2*np.pi*var)) - 1/(2*var) * (x-mu)**2
         log_pdf[mask] = 0
-        # multi_norm = np.exp(log_pdf.sum(axis=1))
-        # weighted_norm = p * multi_norm
-        # ll += np.log(np.sum(weighted_norm)+1e-16)
-        # post.append(weighted_norm/(np.sum(weighted_norm)))
         sum_log_pdf = log_pdf.sum(axis=1)
         max_log_pdf = np.max(sum_log_pdf)
         ll += logsumexp(sum_log_pdf, b=p)
